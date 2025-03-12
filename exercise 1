@@ -1,0 +1,10 @@
+#calculator using simple operators 
+print("EXERCISE 1 : CALCULATOR (100DaysWithePython)")
+print("**********************************************")
+a=int(input("enter the first number ="))
+b=int(input("enter the second number ="))
+print("the sum of the two numbers is = ",a+b)
+print("the difference of the two numbers is = ",a-b)
+print("the product of the two numbers is = ",a*b)
+print("the quotient of the two numbers is = ",a/b)
+print("the modulus of the two numbers is = ",a%b)
