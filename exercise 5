@@ -1,0 +1,44 @@
+#snake , gun,water game
+import random
+
+
+def play_game(c, u):
+  if c == u:
+    return 0
+  if c == 0 and u == 1:
+    return -1
+  if c == 1 and u == 2:
+    return -1
+  if c == 2 and u == 0:
+    return -1
+
+  return 1
+
+
+while True:
+  c = random.randint(0, 2)
+  try:
+    u = int(input("enter 0 for snake , 1 for water and 2 for gun"))
+    if u not in [0, 1, 2]:
+      print("Invalid input! try again...")
+      continue
+  except ValueError:
+    print("Invalid input! Please enter a number.")
+    continue
+
+  print("You:", u)
+  print("Computer:", c)
+
+  score = play_game(c, u)
+
+  if score == 0:
+    print("It's a draw!")
+  elif score == -1:
+    print("You lose!")
+  else:
+    print("You won!")
+    break
+
+
+
+
