@@ -1,0 +1,10 @@
+import pyttsx3
+import time  # Import time module
+
+engine = pyttsx3.init()
+
+names = ["hello Nandini "]
+for name in names:
+    engine.say(name)
+    engine.runAndWait()
+    time.sleep(0.3)  # Adds a small pause between names
